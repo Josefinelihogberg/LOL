@@ -195,7 +195,8 @@ const checkCards = () => {
         // If two cards match
         if (selectedCards[0].getAttribute("name") == selectedCards[1].getAttribute("name")) {
             selectedCards.forEach((card) => {
-                setTimeout(() => card.classList.remove("selectedCard"),1200);
+                setTimeout(() => card.classList.remove("selectedCard"),1000);
+               setTimeout(() => card.style.visibility = "hidden", 1000);
 
             });
   updateScores();
@@ -204,7 +205,7 @@ const checkCards = () => {
        } else { // If two cards don't match
             selectedCards.forEach((card) => {
                 setTimeout(() => card.classList.remove("selectedCard"),1000);
-               setTimeout(() => card.style.visibility = "hidden", 1000);
+               
             });
             gameTurn = (gameTurn + 1) % 2; // Switch to another player
             currentPlayer  = players[gameTurn];
