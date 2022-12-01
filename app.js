@@ -204,7 +204,7 @@ const checkCards = () => {
        } else { // If two cards don't match
             selectedCards.forEach((card) => {
                 setTimeout(() => card.classList.remove("selectedCard"),1000);
-               setTimeout(() => card.style.visibility = "hidden", 1200);
+               setTimeout(() => card.style.visibility = "hidden", 1000);
             });
             gameTurn = (gameTurn + 1) % 2; // Switch to another player
             currentPlayer  = players[gameTurn];
