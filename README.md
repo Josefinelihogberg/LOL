@@ -1,3 +1,3 @@
-#### Memory Game to my dear kids Linnea, Oskar and Lovisa.
+### Memory Game to my dearest kids Linnea, Oskar and Lovisa.
 
 https://josefinelihogberg.github.io/lol/
